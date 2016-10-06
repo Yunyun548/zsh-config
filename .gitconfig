@@ -1,0 +1,18 @@
+
+# Ceci est le fichier de configuration personnel de Git.
+[user]
+# Veuillez adapter et décommenter les lignes suivantes :
+	name = YOUR_NAME_HERE
+	email = YOUR_EMAIL_HERE
+
+# Get the current branch name (not so useful in itself, but used in
+# other aliases)
+branch-name = "!git rev-parse --abbrev-ref HEAD"
+
+# Push the current branch to the remote "origin", and set it to track
+# the upstream branch
+publish = "!git push -u origin $(git branch-name)"
+
+[alias]
+	# Create a branch and position you on it
+	b-co = !sh -c 'git branch $1 && git checkout $1' -
