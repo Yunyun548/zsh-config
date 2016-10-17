@@ -49,3 +49,10 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 
+# The Fuck alias
+eval "$(thefuck --alias)"
+
+# List docker containers and their ip
+alias docker-ip="docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)"
+
+
