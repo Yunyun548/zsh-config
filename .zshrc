@@ -55,4 +55,5 @@ eval "$(thefuck --alias)"
 # List docker containers and their ip
 alias docker-ip="docker inspect -f '{{.Name}} - {{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker ps -aq)"
 
-
+# Rofi Alias for cinnamon shortcuse use
+alias rofimenu="rofi -show run -width 600 -font 'Source Code Pro for Powerline Bold 13' -lines 8"
