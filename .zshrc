@@ -57,3 +57,7 @@ alias docker-ip="docker inspect -f '{{.Name}} - {{range .NetworkSettings.Network
 
 # Rofi Alias for cinnamon shortcuse use
 alias rofimenu="rofi -show run -width 600 -font 'Source Code Pro for Powerline Bold 13' -lines 8"
+
+# Exec commands into php docker container 1
+alias sf="docker-compose exec php"
+
